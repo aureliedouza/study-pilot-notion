@@ -23,22 +23,16 @@
     box-sizing: border-box;
 }
 
-
 body {
-
     margin: 0;
-
     font-family:
         -apple-system,
         BlinkMacSystemFont,
         "Segoe UI",
         sans-serif;
-
     background: #f5f5f7;
-
     color: #222;
 }
-
 
 button,
 input,
@@ -46,15 +40,10 @@ select {
     font: inherit;
 }
 
-
 button {
-
     border: none;
-
     padding: 8px 12px;
-
     border-radius: 8px;
-
     cursor: pointer;
 }
 
@@ -64,13 +53,9 @@ button {
 ===================================================== */
 
 .app {
-
     width: 100%;
-
     max-width: 1400px;
-
     margin: 20px auto;
-
     padding: 0 15px;
 }
 
@@ -80,13 +65,9 @@ button {
 ===================================================== */
 
 .calendar {
-
     background: white;
-
     border-radius: 16px;
-
     overflow: hidden;
-
     box-shadow:
         0 4px 20px rgba(0,0,0,0.08);
 }
@@ -97,67 +78,43 @@ button {
 ===================================================== */
 
 .header {
-
     padding: 18px 20px;
-
     border-bottom: 1px solid #eee;
 }
 
-
 .header-top {
-
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
-
     gap: 12px;
 }
 
-
 .header h1 {
-
     margin: 0;
-
     font-size: 20px;
 }
 
-
 .header p {
-
     margin: 5px 0 0;
-
     color: #777;
 }
 
-
 .navigation {
-
     display: flex;
-
     align-items: center;
-
     gap: 6px;
 }
 
-
 .nav-button {
-
     background: #f0f0f2;
 }
 
-
 .nav-button:hover {
-
     background: #e5e5e8;
 }
 
-
 .today-button {
-
     background: #6366f1;
-
     color: white;
 }
 
@@ -167,304 +124,190 @@ button {
 ===================================================== */
 
 .planning-area {
-
     display: grid;
-
-    grid-template-columns:
-        260px 1fr;
-
+    grid-template-columns: 260px 1fr;
     min-height: 700px;
 }
 
 
 /* =====================================================
-   SIDEBAR À PLANIFIER
+   SIDEBAR
 ===================================================== */
 
 .planning-sidebar {
-
     background: #fafafa;
-
     border-right: 1px solid #eee;
-
     padding: 16px;
 }
 
-
 .planning-sidebar h2 {
-
     margin: 0;
-
     font-size: 16px;
 }
 
-
 .planning-count {
-
     display: inline-flex;
-
     align-items: center;
-
     justify-content: center;
-
     min-width: 22px;
-
     height: 22px;
-
     margin-left: 5px;
-
     padding: 0 6px;
-
     border-radius: 999px;
-
     background: #e8e8ff;
-
     color: #6366f1;
-
     font-size: 12px;
 }
 
-
 .planning-description {
-
     margin: 6px 0 16px;
-
     color: #888;
-
     font-size: 12px;
-
     line-height: 1.4;
 }
 
-
 .planning-list {
-
     display: flex;
-
     flex-direction: column;
-
     gap: 8px;
 }
 
-
 .planning-task {
-
     padding: 11px;
-
     background: white;
-
     border: 1px solid #e5e5e5;
-
     border-radius: 10px;
-
     cursor: pointer;
-
     transition:
         transform 0.1s,
         box-shadow 0.1s;
 }
 
-
 .planning-task:hover {
-
     transform: translateY(-1px);
-
     box-shadow:
         0 3px 10px rgba(0,0,0,0.06);
 }
 
-
 .planning-task-title {
-
     font-size: 13px;
-
     font-weight: 600;
-
     line-height: 1.3;
 }
 
-
 .planning-task-course {
-
     margin-top: 4px;
-
     font-size: 11px;
-
     color: #777;
 }
 
-
 .planning-task-deadline {
-
     margin-top: 7px;
-
     font-size: 11px;
-
     color: #6366f1;
 }
 
-
 .empty-planning {
-
     padding: 20px 5px;
-
     text-align: center;
-
     color: #999;
-
     font-size: 12px;
-
     line-height: 1.5;
 }
 
-
 .planning-error {
-
     padding: 12px;
-
     background: #fbe4e4;
-
     color: #a22;
-
     border-radius: 8px;
-
     font-size: 12px;
-
     line-height: 1.4;
 }
 
 
 /* =====================================================
-   CALENDRIER — CONTENEUR
+   CALENDRIER
 ===================================================== */
 
 .calendar-container {
-
     min-width: 0;
-
     overflow-x: auto;
 }
 
-
-/* =====================================================
-   EN-TÊTE DES JOURS
-===================================================== */
-
 .week-header {
-
     display: grid;
-
     grid-template-columns:
         60px repeat(
             7,
             minmax(100px, 1fr)
         );
-
     border-bottom: 1px solid #eee;
-
     min-width: 760px;
 }
 
-
 .corner {
-
     background: #fafafa;
-
     border-right: 1px solid #eee;
 }
 
-
 .day-header {
-
     padding: 12px 6px;
-
     text-align: center;
-
     border-right: 1px solid #eee;
-
     background: white;
 }
 
-
 .day-header:last-child {
-
     border-right: none;
 }
 
-
 .day-name {
-
     font-size: 11px;
-
     color: #777;
-
     text-transform: uppercase;
 }
 
-
 .day-number {
-
     margin-top: 3px;
-
     font-size: 16px;
-
     font-weight: 600;
 }
 
-
 .day-header.today {
-
     background: #f0f0ff;
 }
 
-
 .day-header.today .day-number {
-
     color: #6366f1;
 }
 
 
 /* =====================================================
-   CORPS DU CALENDRIER
+   CORPS
 ===================================================== */
 
 .calendar-body {
-
     display: grid;
-
     grid-template-columns:
         60px 1fr;
-
     min-width: 760px;
 }
 
-
 .hours {
-
     background: #fafafa;
 }
 
-
 .hour {
-
     height: 60px;
-
     padding: 4px 6px;
-
     text-align: right;
-
     color: #888;
-
     font-size: 11px;
-
     border-bottom: 1px solid #eee;
 }
 
-
 .week-grid {
-
     display: grid;
-
     grid-template-columns:
         repeat(
             7,
@@ -472,37 +315,24 @@ button {
         );
 }
 
-
 .day {
-
     position: relative;
-
     min-width: 0;
-
     border-right: 1px solid #eee;
 }
 
-
 .day:last-child {
-
     border-right: none;
 }
 
-
 .slot {
-
     height: 10px;
-
     border-bottom: 1px solid #f0f0f0;
-
     position: relative;
-
     cursor: pointer;
 }
 
-
 .slot:hover {
-
     background: #f5f5ff;
 }
 
@@ -512,77 +342,48 @@ button {
 ===================================================== */
 
 .event {
-
     position: absolute;
-
     left: 3px;
-
     right: 3px;
-
     padding: 5px 6px;
-
     color: white;
-
     border-radius: 6px;
-
     font-size: 11px;
-
     font-weight: 500;
-
     cursor: pointer;
-
     overflow: hidden;
-
     z-index: 2;
 }
 
-
 .event:hover {
-
     filter: brightness(0.96);
 }
 
-
 .event-title {
-
     white-space: nowrap;
-
     overflow: hidden;
-
     text-overflow: ellipsis;
 }
 
-
 .event-meta {
-
     font-size: 9px;
-
     opacity: 0.85;
-
     margin-top: 2px;
 }
 
-
 .event--deadline-work {
-
     background: #6366f1;
 }
 
-
 .event--learning {
-
     background: #10b981;
 }
 
-
 .event--course {
-
     background: #f59e0b;
 }
 
-
 .event--exam-review {
-
     background: #ec4899;
 }
 
@@ -592,118 +393,74 @@ button {
 ===================================================== */
 
 .modal {
-
     display: none;
-
     position: fixed;
-
     inset: 0;
-
     background:
         rgba(0,0,0,0.25);
-
     justify-content: center;
-
     align-items: center;
-
     z-index: 100;
 }
 
-
 .modal-content {
-
     width:
         min(
             420px,
             calc(100% - 30px)
         );
-
     max-height: 90vh;
-
     overflow-y: auto;
-
     background: white;
-
     padding: 24px;
-
     border-radius: 16px;
-
     box-shadow:
         0 10px 40px rgba(0,0,0,0.2);
 }
 
-
 .modal-content h2 {
-
     margin-top: 0;
 }
 
-
 .form-group {
-
     margin-bottom: 15px;
 }
 
-
 .form-group label {
-
     display: block;
-
     margin-bottom: 6px;
-
     font-size: 13px;
-
     color: #666;
 }
 
-
 .form-group input,
 .form-group select {
-
     width: 100%;
-
     padding: 10px;
-
     border: 1px solid #ddd;
-
     border-radius: 8px;
-
     background: white;
 }
 
-
 .buttons {
-
     display: flex;
-
     gap: 10px;
-
     justify-content: flex-end;
-
     margin-top: 18px;
 }
 
-
 .cancel {
-
     background: #eee;
 }
 
-
 .save {
-
     background: #6366f1;
-
     color: white;
 }
 
-
 .delete {
-
     margin-right: auto;
-
     background: #fbe4e4;
-
     color: #a22;
 }
 
@@ -715,16 +472,11 @@ button {
 @media (max-width: 900px) {
 
     .planning-area {
-
-        grid-template-columns:
-            1fr;
+        grid-template-columns: 1fr;
     }
 
-
     .planning-sidebar {
-
         border-right: none;
-
         border-bottom: 1px solid #eee;
     }
 
@@ -737,16 +489,9 @@ button {
 
 <body>
 
-
 <div class="app">
 
-
     <div class="calendar">
-
-
-        <!-- =================================================
-             HEADER
-        ================================================= -->
 
         <div class="header">
 
@@ -762,7 +507,6 @@ button {
 
                 </div>
 
-
                 <div class="navigation">
 
                     <button
@@ -773,7 +517,6 @@ button {
                         ←
                     </button>
 
-
                     <button
                         class="today-button"
                         id="todayButton"
@@ -781,7 +524,6 @@ button {
                     >
                         Aujourd'hui
                     </button>
-
 
                     <button
                         class="nav-button"
@@ -798,16 +540,7 @@ button {
         </div>
 
 
-        <!-- =================================================
-             ZONE PRINCIPALE
-        ================================================= -->
-
         <div class="planning-area">
-
-
-            <!-- =================================================
-                 SIDEBAR À PLANIFIER
-            ================================================= -->
 
             <aside class="planning-sidebar">
 
@@ -824,7 +557,6 @@ button {
 
                 </h2>
 
-
                 <p class="planning-description">
 
                     Tâches récupérées depuis Notion
@@ -832,7 +564,6 @@ button {
                     dans ton calendrier.
 
                 </p>
-
 
                 <div
                     class="planning-list"
@@ -842,45 +573,32 @@ button {
             </aside>
 
 
-            <!-- =================================================
-                 CALENDRIER
-            ================================================= -->
-
             <div class="calendar-container">
-
 
                 <div
                     class="week-header"
                     id="weekHeader"
                 ></div>
 
-
                 <div class="calendar-body">
-
 
                     <div
                         class="hours"
                         id="hours"
                     ></div>
 
-
                     <div
                         class="week-grid"
                         id="weekGrid"
                     ></div>
 
-
                 </div>
-
 
             </div>
 
-
         </div>
 
-
     </div>
-
 
 </div>
 
@@ -894,14 +612,11 @@ button {
     id="taskModal"
 >
 
-
     <div class="modal-content">
-
 
         <h2 id="modalTitle">
             Ajouter une tâche
         </h2>
-
 
         <div class="form-group">
 
@@ -1033,7 +748,6 @@ button {
 
         <div class="buttons">
 
-
             <button
                 class="delete"
                 id="deleteButton"
@@ -1041,7 +755,6 @@ button {
             >
                 Retirer du planning
             </button>
-
 
             <button
                 class="cancel"
@@ -1051,7 +764,6 @@ button {
                 Annuler
             </button>
 
-
             <button
                 class="save"
                 id="saveButton"
@@ -1060,9 +772,7 @@ button {
                 Enregistrer
             </button>
 
-
         </div>
-
 
     </div>
 
@@ -1072,21 +782,22 @@ button {
 <script>
 
 /* =====================================================
-   STUDY PILOT
-   VERSION V4 — CALENDRIER + NOTION
+   STUDY PILOT — V5
 
-   Fonctionnalités :
+   MODÈLE :
 
-   1. Calendrier hebdomadaire
-   2. Navigation entre les semaines
-   3. Création de tâches
-   4. Modification de tâches
-   5. Suppression d'un créneau
-   6. Zone « À planifier »
-   7. Récupération des tâches depuis Notion
-   8. Planification d'une tâche Notion
-   9. Calcul de plannedStart
-   10. Stockage local des blocs
+   NOTION
+      ↓
+   TÂCHES
+      ↓
+   TIME BLOCKS
+      ↓
+   CALENDRIER
+
+   Une tâche peut posséder plusieurs Time Blocks.
+
+   Le calendrier est donc construit à partir des
+   Time Blocks, et non directement à partir de Notion.
 ===================================================== */
 
 
@@ -1097,86 +808,65 @@ button {
 const weekHeader =
     document.getElementById("weekHeader");
 
-
 const hoursContainer =
     document.getElementById("hours");
-
 
 const weekGrid =
     document.getElementById("weekGrid");
 
-
 const currentWeekElement =
     document.getElementById("currentWeek");
-
 
 const planningList =
     document.getElementById("planningList");
 
-
 const planningCount =
     document.getElementById("planningCount");
-
 
 const modal =
     document.getElementById("taskModal");
 
-
 const modalTitle =
     document.getElementById("modalTitle");
-
 
 const taskTitle =
     document.getElementById("taskTitle");
 
-
 const taskType =
     document.getElementById("taskType");
-
 
 const taskSubtype =
     document.getElementById("taskSubtype");
 
-
 const course =
     document.getElementById("course");
-
 
 const deadline =
     document.getElementById("deadline");
 
-
 const taskDate =
     document.getElementById("taskDate");
-
 
 const startTime =
     document.getElementById("startTime");
 
-
 const endTime =
     document.getElementById("endTime");
-
 
 const saveButton =
     document.getElementById("saveButton");
 
-
 const deleteButton =
     document.getElementById("deleteButton");
-
 
 const cancelButton =
     document.getElementById("cancelButton");
 
-
 const previousWeekButton =
     document.getElementById("previousWeek");
 
-
 const nextWeekButton =
     document.getElementById("nextWeek");
-
 
 const todayButton =
     document.getElementById("todayButton");
@@ -1197,44 +887,45 @@ const NOTION_API_URL =
 let currentDate =
     new Date();
 
-
 let editingBlockId =
     null;
-
 
 let planningTaskId =
     null;
 
 
 /* =====================================================
-   4. DONNÉES LOCALES
+   4. DONNÉES
+
+   IMPORTANT :
+
+   V5 utilise de nouvelles clés localStorage
+   afin d'éviter les conflits avec V3/V4.
 ===================================================== */
 
 let tasks =
     JSON.parse(
         localStorage.getItem(
-            "studyPilotTasksV3"
+            "studyPilotTasksV5"
         )
     ) || {};
-
 
 let timeBlocks =
     JSON.parse(
         localStorage.getItem(
-            "studyPilotTimeBlocksV3"
+            "studyPilotTimeBlocksV5"
         )
     ) || {};
 
 
 /* =====================================================
-   5. GÉNÉRER UN ID
+   5. ID
 ===================================================== */
 
 function generateId() {
 
     if (
-        typeof crypto !== "undefined"
-        &&
+        typeof crypto !== "undefined" &&
         crypto.randomUUID
     ) {
 
@@ -1242,35 +933,33 @@ function generateId() {
 
     }
 
-
     return (
-        Date.now()
-        +
-        "-"
-        +
+        Date.now() +
+        "-" +
         Math.random()
             .toString(36)
             .substring(2)
     );
+
 }
 
 
 /* =====================================================
-   6. SAUVEGARDER LES DONNÉES
+   6. SAUVEGARDE
 ===================================================== */
 
 function saveData() {
 
     localStorage.setItem(
-        "studyPilotTasksV3",
+        "studyPilotTasksV5",
         JSON.stringify(tasks)
     );
 
-
     localStorage.setItem(
-        "studyPilotTimeBlocksV3",
+        "studyPilotTimeBlocksV5",
         JSON.stringify(timeBlocks)
     );
+
 }
 
 
@@ -1283,26 +972,20 @@ function getDateKey(date) {
     const year =
         date.getFullYear();
 
-
     const month =
         String(
             date.getMonth() + 1
-        ).padStart(
-            2,
-            "0"
-        );
-
+        ).padStart(2, "0");
 
     const day =
         String(
             date.getDate()
-        ).padStart(
-            2,
-            "0"
-        );
+        ).padStart(2, "0");
 
+    return (
+        `${year}-${month}-${day}`
+    );
 
-    return `${year}-${month}-${day}`;
 }
 
 
@@ -1317,12 +1000,12 @@ function parseDateKey(dateKey) {
             .split("-")
             .map(Number);
 
-
     return new Date(
         year,
         month - 1,
         day
     );
+
 }
 
 
@@ -1331,23 +1014,18 @@ function getMonday(date) {
     const result =
         new Date(date);
 
-
     const day =
         result.getDay();
-
 
     const difference =
         day === 0
             ? -6
             : 1 - day;
 
-
     result.setDate(
-        result.getDate()
-        +
+        result.getDate() +
         difference
     );
-
 
     result.setHours(
         0,
@@ -1356,8 +1034,8 @@ function getMonday(date) {
         0
     );
 
-
     return result;
+
 }
 
 
@@ -1376,6 +1054,7 @@ function formatDayName(date) {
         )
         .replace(".", "")
         .toUpperCase();
+
 }
 
 
@@ -1384,13 +1063,9 @@ function formatWeekTitle(monday) {
     const sunday =
         new Date(monday);
 
-
     sunday.setDate(
-        sunday.getDate()
-        +
-        6
+        sunday.getDate() + 6
     );
-
 
     const mondayText =
         monday.toLocaleDateString(
@@ -1400,7 +1075,6 @@ function formatWeekTitle(monday) {
                 month: "long"
             }
         );
-
 
     const sundayText =
         sunday.toLocaleDateString(
@@ -1412,31 +1086,28 @@ function formatWeekTitle(monday) {
             }
         );
 
+    return (
+        `${mondayText} – ${sundayText}`
+    );
 
-    return `${mondayText} – ${sundayText}`;
 }
 
 
 function formatDeadline(dateKey) {
 
     if (!dateKey) {
-
         return "";
-
     }
 
+    return parseDateKey(dateKey)
+        .toLocaleDateString(
+            "fr-FR",
+            {
+                day: "numeric",
+                month: "long"
+            }
+        );
 
-    const date =
-        parseDateKey(dateKey);
-
-
-    return date.toLocaleDateString(
-        "fr-FR",
-        {
-            day: "numeric",
-            month: "long"
-        }
-    );
 }
 
 
@@ -1447,13 +1118,12 @@ function formatDeadline(dateKey) {
 function changeWeek(amount) {
 
     currentDate.setDate(
-        currentDate.getDate()
-        +
+        currentDate.getDate() +
         amount * 7
     );
 
-
     renderWeek();
+
 }
 
 
@@ -1476,7 +1146,6 @@ todayButton.addEventListener(
         currentDate =
             new Date();
 
-
         renderWeek();
 
     }
@@ -1484,14 +1153,13 @@ todayButton.addEventListener(
 
 
 /* =====================================================
-   10. AFFICHER LES HEURES
+   10. HEURES
 ===================================================== */
 
 function renderHours() {
 
     hoursContainer.innerHTML =
         "";
-
 
     for (
         let hour = 0;
@@ -1502,27 +1170,24 @@ function renderHours() {
         const hourElement =
             document.createElement("div");
 
-
         hourElement.className =
             "hour";
 
-
         hourElement.textContent =
-            String(hour).padStart(2, "0")
-            +
+            String(hour).padStart(2, "0") +
             ":00";
-
 
         hoursContainer.appendChild(
             hourElement
         );
 
     }
+
 }
 
 
 /* =====================================================
-   11. AFFICHER LES JOURS
+   11. JOURS
 ===================================================== */
 
 function renderWeekDays() {
@@ -1530,27 +1195,21 @@ function renderWeekDays() {
     weekHeader.innerHTML =
         "";
 
-
     weekGrid.innerHTML =
         "";
-
 
     const corner =
         document.createElement("div");
 
-
     corner.className =
         "corner";
-
 
     weekHeader.appendChild(
         corner
     );
 
-
     const monday =
         getMonday(currentDate);
-
 
     const todayKey =
         getDateKey(new Date());
@@ -1565,29 +1224,22 @@ function renderWeekDays() {
         const date =
             new Date(monday);
 
-
         date.setDate(
-            monday.getDate()
-            +
+            monday.getDate() +
             dayIndex
         );
-
 
         const dateKey =
             getDateKey(date);
 
 
-        /* ---------------------------------------------
-           EN-TÊTE DU JOUR
-        --------------------------------------------- */
+        /* HEADER */
 
         const dayHeader =
             document.createElement("div");
 
-
         dayHeader.className =
             "day-header";
-
 
         if (
             dateKey === todayKey
@@ -1599,65 +1251,50 @@ function renderWeekDays() {
 
         }
 
-
         const dayName =
             document.createElement("div");
-
 
         dayName.className =
             "day-name";
 
-
         dayName.textContent =
             formatDayName(date);
-
 
         const dayNumber =
             document.createElement("div");
 
-
         dayNumber.className =
             "day-number";
 
-
         dayNumber.textContent =
             date.getDate();
-
 
         dayHeader.appendChild(
             dayName
         );
 
-
         dayHeader.appendChild(
             dayNumber
         );
-
 
         weekHeader.appendChild(
             dayHeader
         );
 
 
-        /* ---------------------------------------------
-           COLONNE DU JOUR
-        --------------------------------------------- */
+        /* COLONNE */
 
         const day =
             document.createElement("div");
 
-
         day.className =
             "day";
-
 
         day.dataset.date =
             dateKey;
 
 
-        /* ---------------------------------------------
-           CRÉNEAUX DE 10 MINUTES
-        --------------------------------------------- */
+        /* 10 MINUTES */
 
         for (
             let hour = 0;
@@ -1674,18 +1311,14 @@ function renderWeekDays() {
                 const slot =
                     document.createElement("div");
 
-
                 slot.className =
                     "slot";
-
 
                 slot.dataset.date =
                     dateKey;
 
-
                 slot.dataset.time =
                     `${String(hour).padStart(2, "0")}:${String(minute).padStart(2, "0")}`;
-
 
                 slot.addEventListener(
                     "click",
@@ -1699,7 +1332,6 @@ function renderWeekDays() {
                     }
                 );
 
-
                 day.appendChild(
                     slot
                 );
@@ -1708,12 +1340,12 @@ function renderWeekDays() {
 
         }
 
-
         weekGrid.appendChild(
             day
         );
 
     }
+
 }
 
 
@@ -1731,12 +1363,11 @@ function timeToMinutes(time) {
             .split(":")
             .map(Number);
 
-
     return (
-        hours * 60
-        +
+        hours * 60 +
         minutes
     );
+
 }
 
 
@@ -1751,24 +1382,20 @@ function minutesToTime(minutes) {
             )
         );
 
-
     const hours =
         Math.floor(
             minutes / 60
         );
 
-
     const mins =
         minutes % 60;
 
-
     return (
-        String(hours).padStart(2, "0")
-        +
-        ":"
-        +
+        String(hours).padStart(2, "0") +
+        ":" +
         String(mins).padStart(2, "0")
     );
+
 }
 
 
@@ -1790,7 +1417,6 @@ const subtypeOptions = {
 
     ],
 
-
     "learning": [
 
         [
@@ -1800,7 +1426,6 @@ const subtypeOptions = {
 
     ],
 
-
     "course": [
 
         [
@@ -1809,7 +1434,6 @@ const subtypeOptions = {
         ]
 
     ],
-
 
     "exam-review": [
 
@@ -1828,16 +1452,12 @@ function updateSubtypeOptions() {
     const type =
         taskType.value;
 
-
     taskSubtype.innerHTML =
         "";
 
-
     const options =
-        subtypeOptions[type]
-        ||
+        subtypeOptions[type] ||
         [];
-
 
     options.forEach(
         ([value, label]) => {
@@ -1845,14 +1465,11 @@ function updateSubtypeOptions() {
             const option =
                 document.createElement("option");
 
-
             option.value =
                 value;
 
-
             option.textContent =
                 label;
-
 
             taskSubtype.appendChild(
                 option
@@ -1860,6 +1477,7 @@ function updateSubtypeOptions() {
 
         }
     );
+
 }
 
 
@@ -1870,25 +1488,23 @@ taskType.addEventListener(
 
 
 /* =====================================================
-   14. TIME BLOCKS D'UNE TÂCHE
+   14. TIME BLOCKS
 ===================================================== */
 
 function getTimeBlocksForTask(
     notionId
 ) {
 
-    return Object.values(timeBlocks)
-        .filter(
-            block =>
-                block.notionId ===
-                notionId
-        );
+    return Object.values(
+        timeBlocks
+    ).filter(
+        block =>
+            block.notionId ===
+            notionId
+    );
+
 }
 
-
-/* =====================================================
-   15. CALCUL DE plannedStart
-===================================================== */
 
 function calculatePlannedStart(
     notionId
@@ -1899,7 +1515,6 @@ function calculatePlannedStart(
             notionId
         );
 
-
     if (
         blocks.length === 0
     ) {
@@ -1908,17 +1523,14 @@ function calculatePlannedStart(
 
     }
 
-
     blocks.sort(
         (a, b) => {
 
             const valueA =
                 `${a.date}T${a.startTime}`;
 
-
             const valueB =
                 `${b.date}T${b.startTime}`;
-
 
             return valueA.localeCompare(
                 valueB
@@ -1927,8 +1539,8 @@ function calculatePlannedStart(
         }
     );
 
-
     return blocks[0].date;
+
 }
 
 
@@ -1944,18 +1556,15 @@ function syncTaskPlanning(
                     notionId
             );
 
-
     if (!task) {
-
         return;
-
     }
-
 
     task.plannedStart =
         calculatePlannedStart(
             notionId
         );
+
 }
 
 
@@ -1972,11 +1581,12 @@ function syncAllTasksPlanning() {
 
             }
         );
+
 }
 
 
 /* =====================================================
-   16. RÉCUPÉRATION DES TÂCHES NOTION
+   15. API NOTION
 ===================================================== */
 
 async function loadNotionTasks() {
@@ -1985,7 +1595,6 @@ async function loadNotionTasks() {
 
         planningCount.textContent =
             "…";
-
 
         planningList.innerHTML =
             "";
@@ -2002,8 +1611,7 @@ async function loadNotionTasks() {
 
 
         if (
-            !response.ok
-            ||
+            !response.ok ||
             !data.success
         ) {
 
@@ -2014,21 +1622,8 @@ async function loadNotionTasks() {
         }
 
 
-        /*
-           On transforme les tâches Notion
-           en tâches locales utilisables
-           par le calendrier.
-        */
-
         data.tasks.forEach(
             notionTask => {
-
-                /*
-                   Si la tâche existe déjà localement,
-                   on la met simplement à jour.
-
-                   Sinon, on la crée.
-                */
 
                 let localTask =
                     Object.values(tasks)
@@ -2044,7 +1639,6 @@ async function loadNotionTasks() {
                     const localId =
                         generateId();
 
-
                     tasks[localId] = {
 
                         notionId:
@@ -2053,12 +1647,18 @@ async function loadNotionTasks() {
                         title:
                             notionTask.title || "",
 
+                        subject:
+                            notionTask.subject || "",
+
                         course:
                             notionTask.course || "",
 
                         type:
                             notionTask.type ||
                             "deadline-work",
+
+                        duration:
+                            notionTask.duration || "",
 
                         subtype:
                             notionTask.subtype || "",
@@ -2070,7 +1670,7 @@ async function loadNotionTasks() {
                             notionTask.recommendedStart || "",
 
                         plannedStart:
-                            notionTask.plannedStart || "",
+                            "",
 
                         status:
                             notionTask.status ||
@@ -2082,38 +1682,30 @@ async function loadNotionTasks() {
 
                 else {
 
-                    /*
-                       Mise à jour des informations
-                       provenant de Notion.
-                    */
-
                     localTask.title =
                         notionTask.title || "";
 
+                    localTask.subject =
+                        notionTask.subject || "";
 
                     localTask.course =
                         notionTask.course || "";
-
 
                     localTask.type =
                         notionTask.type ||
                         localTask.type ||
                         "deadline-work";
 
-
-                    localTask.subtype =
-                        notionTask.subtype ||
-                        localTask.subtype ||
+                    localTask.duration =
+                        notionTask.duration ||
+                        localTask.duration ||
                         "";
-
 
                     localTask.deadline =
                         notionTask.deadline || "";
 
-
                     localTask.recommendedStart =
                         notionTask.recommendedStart || "";
-
 
                     localTask.status =
                         notionTask.status ||
@@ -2129,21 +1721,18 @@ async function loadNotionTasks() {
         /*
            IMPORTANT :
 
-           plannedStart est calculé depuis les
-           Time Blocks locaux.
+           Nous ne remplaçons PAS plannedStart
+           par la valeur venant de Notion.
 
-           Cela évite que Notion écrase notre
-           calendrier.
+           Le calendrier local est la source
+           de vérité pour la planification.
         */
 
         syncAllTasksPlanning();
 
-
         saveData();
 
-
         renderPlanningList();
-
 
         renderEvents();
 
@@ -2161,10 +1750,8 @@ async function loadNotionTasks() {
             error
         );
 
-
         planningCount.textContent =
             "!";
-
 
         planningList.innerHTML = `
 
@@ -2187,7 +1774,7 @@ async function loadNotionTasks() {
 
 
 /* =====================================================
-   17. TÂCHES À PLANIFIER
+   16. TÂCHES À PLANIFIER
 ===================================================== */
 
 function getUnplannedTasks() {
@@ -2201,18 +1788,18 @@ function getUnplannedTasks() {
                         task.notionId
                     );
 
-
                 return (
                     blocks.length === 0
                 );
 
             }
         );
+
 }
 
 
 /* =====================================================
-   18. AFFICHER LA ZONE À PLANIFIER
+   17. LISTE À PLANIFIER
 ===================================================== */
 
 function renderPlanningList() {
@@ -2220,10 +1807,8 @@ function renderPlanningList() {
     planningList.innerHTML =
         "";
 
-
     const unplannedTasks =
         getUnplannedTasks();
-
 
     planningCount.textContent =
         unplannedTasks.length;
@@ -2236,57 +1821,38 @@ function renderPlanningList() {
         const empty =
             document.createElement("div");
 
-
         empty.className =
             "empty-planning";
-
 
         empty.textContent =
             "Aucune tâche à planifier.";
 
-
         planningList.appendChild(
             empty
         );
-
 
         return;
 
     }
 
 
-    /*
-       Les tâches avec échéance
-       apparaissent en premier.
-    */
-
     unplannedTasks.sort(
         (a, b) => {
 
             if (
-                !a.deadline
-                &&
+                !a.deadline &&
                 !b.deadline
             ) {
-
                 return 0;
-
             }
-
 
             if (!a.deadline) {
-
                 return 1;
-
             }
-
 
             if (!b.deadline) {
-
                 return -1;
-
             }
-
 
             return a.deadline.localeCompare(
                 b.deadline
@@ -2302,50 +1868,35 @@ function renderPlanningList() {
             const card =
                 document.createElement("div");
 
-
             card.className =
                 "planning-task";
 
 
-            /* -----------------------------------------
-               TITRE
-            ----------------------------------------- */
-
             const title =
                 document.createElement("div");
-
 
             title.className =
                 "planning-task-title";
 
-
             title.textContent =
                 task.title ||
                 "Tâche sans nom";
-
 
             card.appendChild(
                 title
             );
 
 
-            /* -----------------------------------------
-               COURS
-            ----------------------------------------- */
-
             if (task.course) {
 
                 const courseElement =
                     document.createElement("div");
 
-
                 courseElement.className =
                     "planning-task-course";
 
-
                 courseElement.textContent =
                     task.course;
-
 
                 card.appendChild(
                     courseElement
@@ -2354,27 +1905,19 @@ function renderPlanningList() {
             }
 
 
-            /* -----------------------------------------
-               ÉCHÉANCE
-            ----------------------------------------- */
-
             if (task.deadline) {
 
                 const deadlineElement =
                     document.createElement("div");
 
-
                 deadlineElement.className =
                     "planning-task-deadline";
 
-
                 deadlineElement.textContent =
-                    "Échéance : "
-                    +
+                    "Échéance : " +
                     formatDeadline(
                         task.deadline
                     );
-
 
                 card.appendChild(
                     deadlineElement
@@ -2382,10 +1925,6 @@ function renderPlanningList() {
 
             }
 
-
-            /* -----------------------------------------
-               CLIC
-            ----------------------------------------- */
 
             card.addEventListener(
                 "click",
@@ -2405,11 +1944,12 @@ function renderPlanningList() {
 
         }
     );
+
 }
 
 
 /* =====================================================
-   19. OUVRIR UNE TÂCHE À PLANIFIER
+   18. PLANIFIER UNE TÂCHE NOTION
 ===================================================== */
 
 function openPlanningTask(
@@ -2424,17 +1964,13 @@ function openPlanningTask(
                     notionId
             );
 
-
     if (!task) {
-
         return;
-
     }
 
 
     planningTaskId =
         notionId;
-
 
     editingBlockId =
         null;
@@ -2443,7 +1979,6 @@ function openPlanningTask(
     modalTitle.textContent =
         "Planifier la tâche";
 
-
     deleteButton.style.display =
         "none";
 
@@ -2451,53 +1986,37 @@ function openPlanningTask(
     taskTitle.value =
         task.title || "";
 
-
     taskType.value =
         task.type ||
         "deadline-work";
 
-
     updateSubtypeOptions();
 
-
     if (task.subtype) {
-
         taskSubtype.value =
             task.subtype;
-
     }
-
 
     course.value =
         task.course || "";
-
 
     deadline.value =
         task.deadline || "";
 
 
-    /*
-       Date par défaut :
-       aujourd'hui.
-    */
-
     const now =
         new Date();
 
-
-    const roundedMinutes =
+    let roundedMinutes =
         Math.ceil(
             now.getMinutes() / 10
         ) * 10;
 
-
     let defaultDate =
         getDateKey(now);
 
-
     let defaultStartMinutes =
-        now.getHours() * 60
-        +
+        now.getHours() * 60 +
         roundedMinutes;
 
 
@@ -2508,17 +2027,12 @@ function openPlanningTask(
         defaultStartMinutes =
             0;
 
-
         const tomorrow =
             new Date(now);
 
-
         tomorrow.setDate(
-            tomorrow.getDate()
-            +
-            1
+            tomorrow.getDate() + 1
         );
-
 
         defaultDate =
             getDateKey(
@@ -2531,18 +2045,14 @@ function openPlanningTask(
     taskDate.value =
         defaultDate;
 
-
     startTime.value =
         minutesToTime(
             defaultStartMinutes
         );
 
-
     endTime.value =
         minutesToTime(
-            defaultStartMinutes
-            +
-            60
+            defaultStartMinutes + 60
         );
 
 
@@ -2553,7 +2063,7 @@ function openPlanningTask(
 
 
 /* =====================================================
-   20. CRÉER UN TIME BLOCK
+   19. CRÉER UN TIME BLOCK
 ===================================================== */
 
 function createTimeBlock(
@@ -2563,7 +2073,6 @@ function createTimeBlock(
 
     const blockId =
         generateId();
-
 
     timeBlocks[blockId] = {
 
@@ -2584,13 +2093,13 @@ function createTimeBlock(
 
     };
 
-
     return blockId;
+
 }
 
 
 /* =====================================================
-   21. OUVRIR MODALE — NOUVELLE TÂCHE
+   20. NOUVELLE TÂCHE
 ===================================================== */
 
 function openCreateModal(
@@ -2601,14 +2110,12 @@ function openCreateModal(
     planningTaskId =
         null;
 
-
     editingBlockId =
         null;
 
 
     modalTitle.textContent =
         "Ajouter une tâche";
-
 
     deleteButton.style.display =
         "none";
@@ -2617,38 +2124,29 @@ function openCreateModal(
     taskTitle.value =
         "";
 
-
     taskType.value =
         "deadline-work";
 
-
     updateSubtypeOptions();
-
 
     taskSubtype.value =
         "td";
 
-
     course.value =
         "";
-
 
     deadline.value =
         "";
 
-
     taskDate.value =
         date;
-
 
     startTime.value =
         time;
 
-
     endTime.value =
         minutesToTime(
-            timeToMinutes(time)
-            +
+            timeToMinutes(time) +
             60
         );
 
@@ -2656,14 +2154,13 @@ function openCreateModal(
     modal.style.display =
         "flex";
 
-
     taskTitle.focus();
 
 }
 
 
 /* =====================================================
-   22. OUVRIR MODALE — MODIFICATION
+   21. MODIFIER UN BLOC
 ===================================================== */
 
 function openEditModal(
@@ -2673,11 +2170,8 @@ function openEditModal(
     const block =
         timeBlocks[blockId];
 
-
     if (!block) {
-
         return;
-
     }
 
 
@@ -2689,17 +2183,13 @@ function openEditModal(
                     block.notionId
             );
 
-
     if (!task) {
-
         return;
-
     }
 
 
     planningTaskId =
         null;
-
 
     editingBlockId =
         blockId;
@@ -2708,7 +2198,6 @@ function openEditModal(
     modalTitle.textContent =
         "Modifier la tâche";
 
-
     deleteButton.style.display =
         "block";
 
@@ -2716,38 +2205,28 @@ function openEditModal(
     taskTitle.value =
         task.title || "";
 
-
     taskType.value =
         task.type ||
         "deadline-work";
 
-
     updateSubtypeOptions();
 
-
     if (task.subtype) {
-
         taskSubtype.value =
             task.subtype;
-
     }
-
 
     course.value =
         task.course || "";
 
-
     deadline.value =
         task.deadline || "";
-
 
     taskDate.value =
         block.date;
 
-
     startTime.value =
         block.startTime;
-
 
     endTime.value =
         block.endTime;
@@ -2756,14 +2235,13 @@ function openEditModal(
     modal.style.display =
         "flex";
 
-
     taskTitle.focus();
 
 }
 
 
 /* =====================================================
-   23. FERMER LA MODALE
+   22. FERMER MODALE
 ===================================================== */
 
 function closeModal() {
@@ -2771,13 +2249,12 @@ function closeModal() {
     modal.style.display =
         "none";
 
-
     editingBlockId =
         null;
 
-
     planningTaskId =
         null;
+
 }
 
 
@@ -2804,7 +2281,7 @@ modal.addEventListener(
 
 
 /* =====================================================
-   24. ENREGISTRER UNE TÂCHE
+   23. ENREGISTRER
 ===================================================== */
 
 saveButton.addEventListener(
@@ -2860,10 +2337,8 @@ function saveTask() {
 
 
     if (
-        !data.date
-        ||
-        !data.startTime
-        ||
+        !data.date ||
+        !data.startTime ||
         !data.endTime
     ) {
 
@@ -2879,8 +2354,7 @@ function saveTask() {
     if (
         timeToMinutes(
             data.endTime
-        )
-        <=
+        ) <=
         timeToMinutes(
             data.startTime
         )
@@ -2896,7 +2370,8 @@ function saveTask() {
 
 
     /* =================================================
-       CAS 1 — PLANIFIER UNE TÂCHE NOTION
+       CAS 1
+       PLANIFICATION D'UNE TÂCHE NOTION
     ================================================= */
 
     if (planningTaskId) {
@@ -2909,29 +2384,22 @@ function saveTask() {
                         planningTaskId
                 );
 
-
         if (!task) {
-
             return;
-
         }
 
 
         task.title =
             data.title;
 
-
         task.type =
             data.type;
-
 
         task.subtype =
             data.subtype;
 
-
         task.course =
             data.course;
-
 
         task.deadline =
             data.deadline;
@@ -2951,7 +2419,8 @@ function saveTask() {
 
 
     /* =================================================
-       CAS 2 — MODIFIER UN TIME BLOCK
+       CAS 2
+       MODIFICATION
     ================================================= */
 
     else if (editingBlockId) {
@@ -2961,11 +2430,8 @@ function saveTask() {
                 editingBlockId
             ];
 
-
         if (!block) {
-
             return;
-
         }
 
 
@@ -2977,29 +2443,22 @@ function saveTask() {
                         block.notionId
                 );
 
-
         if (!task) {
-
             return;
-
         }
 
 
         task.title =
             data.title;
 
-
         task.type =
             data.type;
-
 
         task.subtype =
             data.subtype;
 
-
         task.course =
             data.course;
-
 
         task.deadline =
             data.deadline;
@@ -3008,10 +2467,8 @@ function saveTask() {
         block.date =
             data.date;
 
-
         block.startTime =
             data.startTime;
-
 
         block.endTime =
             data.endTime;
@@ -3025,7 +2482,8 @@ function saveTask() {
 
 
     /* =================================================
-       CAS 3 — CRÉER UNE NOUVELLE TÂCHE
+       CAS 3
+       NOUVELLE TÂCHE LOCALE
     ================================================= */
 
     else {
@@ -3058,7 +2516,7 @@ function saveTask() {
                 "",
 
             plannedStart:
-                "",
+                data.date,
 
             status:
                 "À faire"
@@ -3081,9 +2539,7 @@ function saveTask() {
 
     syncAllTasksPlanning();
 
-
     saveData();
-
 
     closeModal();
 
@@ -3100,7 +2556,7 @@ function saveTask() {
 
 
 /* =====================================================
-   25. AFFICHER LES TIME BLOCKS
+   24. AFFICHER LES BLOCS
 ===================================================== */
 
 function renderEvents() {
@@ -3124,9 +2580,7 @@ function renderEvents() {
 
 
                 if (!day) {
-
                     return;
-
                 }
 
 
@@ -3140,9 +2594,7 @@ function renderEvents() {
 
 
                 if (!task) {
-
                     return;
-
                 }
 
 
@@ -3151,12 +2603,10 @@ function renderEvents() {
                         block.startTime
                     );
 
-
                 const end =
                     timeToMinutes(
                         block.endTime
                     );
-
 
                 const duration =
                     end - start;
@@ -3167,31 +2617,40 @@ function renderEvents() {
 
 
                 event.className =
-                    "event event--"
-                    +
-                    task.type;
+                    "event event--" +
+                    (
+                        subtypeOptions[
+                            task.type
+                        ]
+                            ? task.type
+                            : "deadline-work"
+                    );
 
+
+                /*
+                   1 minute = 1 pixel
+
+                   60 minutes = 60 px
+
+                   Cela correspond exactement
+                   à la hauteur d'une heure.
+                */
 
                 event.style.top =
                     start + "px";
-
 
                 event.style.height =
                     Math.max(
                         duration - 4,
                         10
-                    )
-                    +
-                    "px";
+                    ) + "px";
 
 
                 const title =
                     document.createElement("div");
 
-
                 title.className =
                     "event-title";
-
 
                 title.textContent =
                     task.title;
@@ -3200,10 +2659,8 @@ function renderEvents() {
                 const meta =
                     document.createElement("div");
 
-
                 meta.className =
                     "event-meta";
-
 
                 meta.textContent =
                     `${block.startTime} – ${block.endTime}`;
@@ -3212,7 +2669,6 @@ function renderEvents() {
                 event.appendChild(
                     title
                 );
-
 
                 event.appendChild(
                     meta
@@ -3224,7 +2680,6 @@ function renderEvents() {
                     eventClick => {
 
                         eventClick.stopPropagation();
-
 
                         openEditModal(
                             block.id
@@ -3240,11 +2695,12 @@ function renderEvents() {
 
             }
         );
+
 }
 
 
 /* =====================================================
-   26. SUPPRIMER UN TIME BLOCK
+   25. SUPPRIMER UN BLOC
 ===================================================== */
 
 deleteButton.addEventListener(
@@ -3256,9 +2712,7 @@ deleteButton.addEventListener(
 function deleteCurrentBlock() {
 
     if (!editingBlockId) {
-
         return;
-
     }
 
 
@@ -3290,12 +2744,9 @@ function deleteCurrentBlock() {
         notionId
     );
 
-
     saveData();
 
-
     closeModal();
-
 
     renderWeek();
 
@@ -3303,7 +2754,7 @@ function deleteCurrentBlock() {
 
 
 /* =====================================================
-   27. RENDU COMPLET DU CALENDRIER
+   26. RENDU COMPLET
 ===================================================== */
 
 function renderWeek() {
@@ -3322,18 +2773,13 @@ function renderWeek() {
 
     renderHours();
 
-
     renderWeekDays();
-
 
     syncAllTasksPlanning();
 
-
     saveData();
 
-
     renderEvents();
-
 
     renderPlanningList();
 
@@ -3341,7 +2787,7 @@ function renderWeek() {
 
 
 /* =====================================================
-   28. INITIALISATION
+   27. INITIALISATION
 ===================================================== */
 
 function initialize() {
